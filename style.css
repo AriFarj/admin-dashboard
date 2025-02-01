@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,7 @@
 }
 
 .sidebar-container {
-    background-color: #3e9bd8;
+    background-color: #1892d3;
 }
 
 .sidebar {
@@ -52,30 +51,49 @@
     width: 30px;
     grid-column: 1;
     /* used https://codepen.io/sosuke/pen/Pjoqqp codenpen to get filter values from hex color value */
+
     filter: var(--special-color);
+    /* WHITE COLOR */
 }
 
 .sidebar-link {
     grid-column: 2;
 }
 
-
 .content-container {
     display: grid;
     grid-template-rows: 1fr 6fr;
-    
 }
 
 .header {
     grid-row: 1;
-    border-style: solid;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1)
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem;
+    gap: 8px;
+}
+
+.search-box img {
+    height: 30px;
+    width: 30px;
+}
+
+.search-box input {
+    background-color: #e1e8f0;
+    border-radius: 10px;
+    width: 80vh;
+    height: 1.5rem;
+    border-style: none;
 }
 
 .content {
     grid-row: 2;
-    border-style: solid;
-    border-color: blue;;
+    background-color: #e1e8f0;
 }
