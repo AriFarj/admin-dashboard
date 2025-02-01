@@ -163,8 +163,6 @@
 }
 
 .cards {
-    border-style: solid;
-    border-color: red;
     margin: 18px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -172,8 +170,6 @@
 }
 
 .annoucements {
-    border-style: solid;
-    border-color: blue;
 }
 
 .project-card {
