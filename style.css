@@ -151,13 +151,18 @@
     width: 100px;
 }
 
-.content{
+.content {
     display: grid;
     grid-template-columns: 3fr 1fr;
     background-color: #e1e8f0;
 }
 
 .projects {
+    /* margin: 16px; */
+    padding: 18px
+}
+
+.cards {
     border-style: solid;
     border-color: red;
     margin: 18px;
@@ -179,20 +184,21 @@
 }
 
 .item-line {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    top: 60px;
-    gap: 8px;
-    margin-right: 24px;
+    display: flex
+    ;
+        justify-content: flex-end;
+        position: relative;
+        top: -10px;
+        gap: 8px;
+        margin-right: 24px;
 }
 
-.item-line > img {
+.item-line>img {
     height: 30px;
     width: 30px;
 }
 
-.project-card >h3,
+.project-card>h3,
 .project-card>p {
     margin: 16px;
 }
