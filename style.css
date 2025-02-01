@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     font-family: Roboto, sans-serif;
+    /* used https://codepen.io/sosuke/pen/Pjoqqp codenpen to get filter values from hex color value */
+    --special-color: invert(100%) sepia(0%) saturate(0%) hue-rotate(233deg) brightness(102%) contrast(102%);
 }
 
 .container {
@@ -49,9 +52,30 @@
     width: 30px;
     grid-column: 1;
     /* used https://codepen.io/sosuke/pen/Pjoqqp codenpen to get filter values from hex color value */
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(233deg) brightness(102%) contrast(102%);
+    filter: var(--special-color);
 }
 
 .sidebar-link {
     grid-column: 2;
+}
+
+
+.content-container {
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+    
+}
+
+.header {
+    grid-row: 1;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+}
+
+.content {
+    grid-row: 2;
+    border-style: solid;
+    border-color: blue;;
 }
