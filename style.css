@@ -13,7 +13,7 @@
 }
 
 .sidebar-container {
-    background-color: rgb(62, 155, 216);
+    background-color: #3e9bd8;
 }
 
 .sidebar {
@@ -48,7 +48,8 @@
     height: 30px;
     width: 30px;
     grid-column: 1;
-    fill: white;
+    /* used https://codepen.io/sosuke/pen/Pjoqqp codenpen to get filter values from hex color value */
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(233deg) brightness(102%) contrast(102%);
 }
 
 .sidebar-link {
